@@ -1,0 +1,48 @@
+---
+- name: Configure Elk VM with Docker
+  hosts: elk
+  remote_user: azdmin
+  become: true
+  tasks:
+
+  # use apt to install docker.io
+  - name: Install docker.io
+    apt:
+      force_apt_get: yes
+      update_cache: yes
+      name: docker.io
+      state: present
+
+  # use apt to install python-3
+  - name: Install pip3
+    apt:
+      name: python3-pip
+      state: present
+
+  # use pip to install python docker module
+  - name: Install Docker python module
+    pip:
+      name: docker
+      state: present
+
+ # change vm memory
+  - name: Resize memory
+    command: sysctl -w vm.max_map_count=262144
+
+  # install elk container
+  - name: download and launch docker web container
+    docker_container:
+      name: elk-server
+      image: sebp/elk:761
+      state: started
+      restart_policy: always
+      published_ports:
+       - '5601:5601'
+       - '5044:5044'
+       - '9200:9200'
+
+  # use systemd to startservice
+  - name: Enable docker service on boot
+    systemd:
+      name: docker
+      enabled: yes
