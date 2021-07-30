@@ -74,7 +74,8 @@ This ELK server is configured to monitor the following machines: Web-1 (10.0.0.8
 We have installed the following Beats on these machines: Filebeat, Metricbeat
 
 These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which w>
+- Filebeat is used to forward and centralize logs and files. Types of logs that Filebeat can collect are audit logs, deprecation logs, gc logs, server logs, and more. For example, Filebeat can collect and store deprecation logs so that we can know what features of a software are no longer being used.
+- Metricbeat is used to collect metrics from your system and services, such as CPU, memory, or data usage related to services running on the server. 
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned:
