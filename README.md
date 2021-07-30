@@ -5,7 +5,7 @@ My first project completed for the University of Denver Cybersecurity Bootcamp. 
 
 The files in this repository were used to configure the network depicted below.
 
-![TODO: Update the path with the name of your diagram](Images/diagram_filename.png)
+![alt text](http://github.com/gmorelos/ELK-Stack/blob/main/Diagrams/Gloria_Network%20Diagram.png "Network Diagram")
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above, or, alternative>
 This document contains the following details:
