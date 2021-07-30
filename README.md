@@ -64,7 +64,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![docker ps](Images/sebp elk.PNG)
+![docker ps](https://github.com/gmorelos/ELK-Stack/blob/main/Images/sebp%20elk.PNG "docker ps output")
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines: Web-1 (10.0.0.8) and Web-2 (10.0.0.9)
