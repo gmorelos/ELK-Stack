@@ -25,7 +25,7 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
 
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the files and system metrics.
+Integrating an ELK server along with Filebeat and Metricbeat allows users to easily monitor the vulnerable VMs for changes to the files and system metrics.
 
 The configuration details of each machine may be found below.
 
@@ -51,8 +51,8 @@ A summary of the access policies in place can be found in the table below:
 |----------------------|---------------------|--------------------------------------|
 | Jump-Box-Provisioner | Yes                 | 73.243.48.188 (Personal Workstation) |
 | ELK-Server           | Yes                 | 73.243.48.188 (Personal Workstation) |
-| Web-1                | No                  | --                                   |
-| Web-2                | No                  | --                                   |
+| Web-1                | No                  | 52.170.60.19 (Jump-Box-Provisioner)  |
+| Web-2                | No                  | 52.170.60.19 (Jump-Box-Provisioner)  |
 
 
 ### Elk Configuration
