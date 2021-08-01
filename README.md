@@ -3,7 +3,7 @@ My first project completed for the University of Denver Cybersecurity Bootcamp. 
 
 ## Automated ELK Stack Deployment
 
-The files in this repository were used to configure the network depicted below.
+The files in this repository were used to configure the network linked below.
 
 ![Network Diagram](http://github.com/gmorelos/ELK-Stack/blob/main/Diagram/Gloria_Network%20Diagram.png "Network Diagram")
 
