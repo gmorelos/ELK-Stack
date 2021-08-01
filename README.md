@@ -83,5 +83,5 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
 SSH into the control node and follow the steps below:
 - Copy the install-elk.yml file to /etc/ansible.
-- Update the hosts file to include the internal IP addresses of the machines you will be monitoring. Place the Web-1 and Web-2 IP addresses under the [webservers] header and then create a new [elk] header and place the ELK-Server's internal IP underneath. You must also specify python3 after each IP address listed, so write ansible_python_interpreter=/usr/bin/python3 after each IP address (e.g. 10.0.0.8 ansible_python_interpreter=/urs/bin/python3).
-- Run the playbook, and navigate to http://<ELK.VM.External.IP>:5601/app/kibana to check that the installation worked as expected.
+- Update the hosts file to include the internal IP addresses of the machines you will be monitoring. Place the Web-1 and Web-2 IP addresses under the [webservers] header and then create a new [elk] header and place the ELK-Server's internal IP underneath. You must also specify python3 after each IP address listed, so write *ansible_python_interpreter=/usr/bin/python3* after each IP address (e.g. *10.0.0.8 ansible_python_interpreter=/urs/bin/python3*).
+- Run the playbook, and navigate to *http://<ELK.VM.External.IP>:5601/app/kibana* to check that the installation worked as expected.
