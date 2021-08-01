@@ -58,7 +58,8 @@ A summary of the access policies in place can be found in the table below:
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because we can now recreate this setup in minutes using the same YAML files used in this project.
-The playbook implements the following tasks:
+
+The install-elk.yml playbook implements the following tasks:
 - Installs docker.io, the docker release for Ubuntu.
 - Installs pip3 and the Python docker module.
 - Resizes memory.
