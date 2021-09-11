@@ -3,9 +3,7 @@ My first project completed for the University of Denver Cybersecurity Bootcamp. 
 
 ## Automated ELK Stack Deployment
 
-The files in this repository were used to configure the network linked below.
-
-![Network Diagram](http://github.com/gmorelos/ELK-Stack/blob/main/Diagram/Gloria_Network%20Diagram.png "Network Diagram")
+The files in this repository were used to configure the network below.
 
 <p align="center">
    <img src="./Diagram/Gloria_Network%20Diagram.png">
@@ -72,6 +70,10 @@ The install-elk.yml playbook implements the following tasks:
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
 ![docker ps](https://github.com/gmorelos/ELK-Stack/blob/main/Images/sebp%20elk.PNG "docker ps output")
+
+<p align="center">
+   <img src="./Images/sebp%20elk.PNG">
+   </p>
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines: Web-1 (10.0.0.8) and Web-2 (10.0.0.9)
