@@ -69,8 +69,6 @@ The install-elk.yml playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![docker ps](https://github.com/gmorelos/ELK-Stack/blob/main/Images/sebp%20elk.PNG "docker ps output")
-
 <p align="center">
    <img src="./Images/sebp%20elk.PNG">
    </p>
