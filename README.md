@@ -7,6 +7,10 @@ The files in this repository were used to configure the network linked below.
 
 ![Network Diagram](http://github.com/gmorelos/ELK-Stack/blob/main/Diagram/Gloria_Network%20Diagram.png "Network Diagram")
 
+<p align="center">
+   <img src="./Diagram/Gloria_Network%20Diagram.png">
+  </p>
+
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above, or, alternatively, select files may be used to install only certain pieces of it. For example, if you choose to run filebeat-playbook.yml and not metricbeat-playbook.yml, then only Filebeat will be installed. 
 
 This document contains the following details:
